@@ -10,7 +10,7 @@ export interface IconConfig {
 const icons: IconConfig[] = [
   {
     name: 'appFacebook',
-    path: 'assets/images/icons/social/facebook.svg',
+    path: '/assets/images/icons/social/facebook.svg',
   },
   {
     name: 'appInstagram',

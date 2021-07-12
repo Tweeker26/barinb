@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { LayoutComponent } from './layout.component';
-import { HeaderModule } from './components/header/header.module';
 import { FooterModule } from './components/footer/footer.module';
-import { MainComponent } from './components/main/main.component';
+import { HeaderModule } from './components/header/header.module';
+import { MainModule } from './components/main/main.module';
+import { LayoutComponent } from './layout.component';
 
 @NgModule({
-  imports: [CommonModule, RouterModule, HeaderModule, FooterModule],
-  declarations: [LayoutComponent, MainComponent],
+  imports: [RouterModule, HeaderModule, MainModule, FooterModule],
+  declarations: [LayoutComponent],
   exports: [LayoutComponent],
 })
 export class LayoutModule {}
